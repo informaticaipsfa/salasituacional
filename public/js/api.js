@@ -1,0 +1,1 @@
+let _API = `<?php echo base_url()?>`
