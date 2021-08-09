@@ -256,7 +256,7 @@
                                 </div>
                             </form>
                         </div>
-                        <button type="button" class="btn btn-primary" id="btnGuardar" onclick="edt.actualizarMilitar();">Guardar</button>
+                        <button type="button" class="btn btn-primary" id="btnGuardar" onclick="fam.actualizarFamiliares();">Guardar</button>
                         <button type="button" class="btn btn-primary float-right" id="btnIMprimir" onclick="ImprimirFicha();">Imprimir Ficha</button>
                     </div>
                 </div>   

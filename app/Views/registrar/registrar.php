@@ -14,14 +14,8 @@
                                 <div class="row">
                                     <div id="content" class="col-lg-12">
                                         <form method="post" action="#" enctype="multipart/form-data">
-                                            <div class="card" style="width: 18rem;">
-                                                <img class="card-img-top" src="img/default-avatar.png">
-                                                <div class="card-body">
-                                                    <div class="form-group">
-                                                        <input type="file" class="form-control-file" name="image" id="image">
-                                                    </div>
-                                                    <input type="button" class="btn btn-primary upload" value="Subir">
-                                                </div>
+                                            <div class="card" style="width: 140px;">
+                                                <img class="card-img-top" id="foto">
                                             </div>
                                         </form>
                                     </div>

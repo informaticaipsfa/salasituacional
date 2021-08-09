@@ -6,6 +6,7 @@
  **/
  
 let lstFamiliares = {}
+let ced = ''
  
  
 class Familiares{
@@ -49,35 +50,41 @@ class Familiares{
     }
 
 
-    editarFamiliares(){
-                for (var i = 0; i <= lstFamiliares.length; i++) {
-                console.log( $("#txtParentescoFamiliar"+i).val());
-                console.log( $("#txtNombreFamiliar"+i).val());
-                console.log( $("#txtCedulafamiliar"+i).val());
-                console.log( $("#txtEdadFamiliar"+i).val());
-                console.log( $("#txtIdFamiliar"+i).val());
-                }
+    actualizarFamiliares(ced){
+        for (var i = 1; i <= lstFamiliares.length; i++) {
+            ced = $("#txtCedula").val();
+            var parentesco = $("#txtParentescoFamiliar" + i).val();
+            var nombres = $("#txtNombreFamiliar" + i).val();
+            var cedula = $("#txtCedulafamiliar" + i).val();
+            var edad = $("#txtEdadFamiliar" + i).val();
+            var porcentaje_pension = $("#txtIdFamiliar" + i).val();
 
-            //  $.ajax({
-            //          url:  _API + "/militar/actualizarMilitar",
-            //          dataType: "json",
-            //          type: "POST",
-            //          data: {
+            $.ajax({
+                     url:  _API + "/familiares/actualizarFamiliares",
+                     dataType: "json",
+                     type: "POST",
+                     data: {
+                        parentesco: parentesco,
+                        nombres: nombres,
+                        cedula: cedula,
+                        edad: edad,
+                        porcentaje_pension: porcentaje_pension,
+                        ced: ced
+                     },
+                     cache: false,
+                     success: function(dataResult){
+                             //console.log(dataResult)
+                             //var dataResult = JSON.parse(dataResult);
+                             if(dataResult.statusCode==200){
+                                     console.log('Familiares actualizados satisfactoriamente !');					
+                             }
+                             else if(dataResult.statusCode==201){
+                                console.log("Ha ocurrido un error !");
+                             }
                              
-            //          },
-            //          cache: false,
-            //          success: function(dataResult){
-            //                  //console.log(dataResult)
-            //                  //var dataResult = JSON.parse(dataResult);
-            //                  if(dataResult.statusCode==200){
-            //                          console.log('Familiares actualizados satisfactoriamente !');					
-            //                  }
-            //                  else if(dataResult.statusCode==201){
-            //                     console.log("Ha ocurrido un error !");
-            //                  }
-                             
-            //                  }
-            //  });
+                             }
+            });
+        }
     }
  
 }
@@ -86,7 +93,7 @@ let fam = new Familiares();
 
 $(function(){
     fam.listarFamiliares();
-    fam.editarFamiliares();
+    //fam.editarFamiliares();
 })
 
 function imprimirFamiliares(){
@@ -108,24 +115,3 @@ function imprimirFamiliares(){
     });
     return cadena;
 }
-
-// function actualizarFamiliares(cedula){
-//     LstFamiliares.forEach(e => {
-//         console.log(e)
-
-//         // console.log(e.cedula, " cedula ", cedula);
-//         // if ( e.cedulamilitar == cedula){
-//         //     familiarObj = e;
-//         // }
-
-//         // $("#tbFamiliaresEditar").append(`<tr>
-//         // <td><input type="text" class="form-control" size=5" id="txtParentesco" value="${e.parentesco}"></td>
-//         // <td><input type="text" class="form-control" id="txtNombreFamiliar" value="${e.nombre}"></td>
-//         // <td><input type="text" class="form-control" size="5" id="txtCedulafamiliar" value="${e.cedula}"></td>
-//         // <td><input type="text" class="form-control" size="5" id="txtEdadFamiliar" value="${e.edad}"></td>
-//         // <td><input type="text" class="form-control" size="5" id="txtIdFamiliar" value="${e.id}"></td>
-//         // </tr>`)
-
-//     });
-//     var datos = JSON.stringify(familiarObj);
-//     sessionStorage.setItem('familiares', datos);

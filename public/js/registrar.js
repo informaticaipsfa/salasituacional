@@ -107,12 +107,6 @@
                 ascensopostmortem: ascensopostmortem,
                 numeroresolucion: numeroresolucion,
                 fecharesolucion: fecharesolucion,
-                parentesco: parentesco,
-                pension: pension,
-                pagounico: pagounico,
-                mensual: mensual,
-                fideicomiso: fideicomiso,
-                monto: monto,
                 lineablanca: lineablanca,
                 vivienda: vivienda,
                 vehiculo: vehiculo,
@@ -157,6 +151,7 @@
         $("#txtNombre").val(omil.Persona.DatoBasico.nombreprimero+' '+omil.Persona.DatoBasico.nombresegundo+' '+omil.Persona.DatoBasico.apellidoprimero+' '+omil.Persona.DatoBasico.apellidosegundo);
         $("#txtCedula").val(omil.Persona.DatoBasico.cedula);
         $("#txtComponente").val(omil.Componente.descripcion);
+        $("#foto").attr("src",`https://192.168.12.247/sssifanb/afiliacion/temp/${omil.Persona.DatoBasico.cedula}/foto.jpg`);
     }
 
     familiares(omil){
@@ -283,8 +278,9 @@
 
 let reg = new Registrar();
 $(function(){
-        var mil = sessionStorage.getItem('militar');
-        var omil = JSON.parse(mil);
+    
+    var mil = sessionStorage.getItem('militar');
+    var omil = JSON.parse(mil);
     reg.datosbasicos(omil);
     reg.familiares(omil);
     reg.listarBeneficios();
