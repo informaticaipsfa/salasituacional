@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'https://192.168.12.240/salasituacional/';
+	public $baseURL = 'http://192.168.12.240/salasituacional/';
 
 	/*
 	|--------------------------------------------------------------------------
