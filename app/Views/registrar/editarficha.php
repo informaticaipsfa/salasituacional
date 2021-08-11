@@ -11,11 +11,14 @@
                     <table>
                         <td>
                             <div class="col-md-12 mb-3">
-                                <div class="card" style="width: 10rem;">
-                                    <img src="public/img/lg1.png">
-                                        <div class="card-body center">
-                                            FOTO
-                                        </div>
+                            <div class="row">
+                                    <div id="content" class="col-lg-12">
+                                        <form method="post" action="#" enctype="multipart/form-data">
+                                            <div class="card" style="width: 140px;">
+                                                <img class="card-img-top" id="foto">
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>                  
                             </div>
                         </td>
@@ -256,7 +259,7 @@
                                 </div>
                             </form>
                         </div>
-                        <button type="button" class="btn btn-primary" id="btnGuardar" onclick="fam.actualizarFamiliares();">Guardar</button>
+                        <button type="button" class="btn btn-primary" id="btnGuardar" onclick="edt.actualizarMilitar();fam.actualizarFamiliares();">Guardar</button>
                         <button type="button" class="btn btn-primary float-right" id="btnIMprimir" onclick="ImprimirFicha();">Imprimir Ficha</button>
                     </div>
                 </div>   

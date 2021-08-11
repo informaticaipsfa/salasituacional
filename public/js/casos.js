@@ -9,6 +9,7 @@
 let lstCasos = {};
 let militarObj = {};
 let familiarObj = {};
+// let cedula = '';
 
 
 
@@ -38,17 +39,21 @@ let familiarObj = {};
         });
     };
 
-    // listarFamiliares(){
-    //     $.ajax({
-    //         url: _API + '/familiares/listarFamiliares',
-    //         dataType: 'json',
-    //         method: 'GET',
-    //         success: function(datos){
-    //             lstFamiliares = datos;
-                
-    //         }
-    //     });
-    // };
+    eliminar(id){
+        console.log(id)
+        $.ajax({
+            url: _API + '/consultar/eliminarCasos',
+            dataType: 'json',
+            method: 'POST',
+            data: {
+                id: id,
+            },
+            success: function(dataResult){
+                //console.log(dataResult)
+                cas.listar();
+            }
+        });
+    };
 
 
 }
@@ -59,7 +64,7 @@ let cas = new Casos();
 
  $(function(){
     cas.listar();
-    // cas.listarFamiliares();
+
 })
 
 function CASVer(){
@@ -73,7 +78,7 @@ function CASVer(){
             </button>
             <div class="dropdown-menu dropdown-menu-right" style="">
                 <a class="dropdown-item" onclick="editar_mil(${e.cedula})">Editar</a>
-                <a class="dropdown-item" href="#">Eliminar</a>
+                <a class="dropdown-item" onclick="cas.eliminar(${e.cedula})">Eliminar</a>
             </div>
             </TD></TR>`);
         });
@@ -83,6 +88,7 @@ function CASVer(){
 function editar_mil(id){
     lstCasos.forEach(e => {
         //console.log(e.cedula, " ID ", id);
+        
         if ( e.cedula == id){
             militarObj = e;
         }
@@ -97,7 +103,7 @@ function editar_mil(id){
     // sessionStorage.setItem('familiarlocal', datosf);
 
    location.href =_API + '/registrar/editarficha';
-    
+
  
 }
 

@@ -45,7 +45,7 @@ class MMilitar extends Model{
                               INNER JOIN evento E ON M.cedula = E.cedulamilitar
                               INNER JOIN necesidades N ON M.cedula = N.cedulamilitar");
       return $lst->getResult();
-  }
+   }
 
   function actualizarMilitar($grado,$nombre,$cedula,$componente,$situacion,
       $causa,$fechaevento,$lugar,$estado,$ascenso,$numeroresolucion,
@@ -57,5 +57,17 @@ class MMilitar extends Model{
       $necesidades="UPDATE `necesidades` SET `linea_blanca`='$lineablanca', `vivienda`='$vivienda', `vehiculo`='$vehiculo', `bienestar`='$bienestar', `ente`='$ente', `otros`='$otros' WHERE `cedulamilitar`='$cedula'";
 		$this->db->query($necesidades);
 	}
-      
+
+    public function eliminarCasos($id){ 
+      $mil="DELETE FROM `militar` WHERE `cedula`='$id' ";
+		$this->db->query($mil);
+      $mil="DELETE FROM `evento` WHERE `cedulamilitar`='$id' ";
+		$this->db->query($mil);
+      $mil="DELETE FROM `beneficios` WHERE `cedulamilitar`='$id' ";
+		$this->db->query($mil);
+      $mil="DELETE FROM `familiares` WHERE `cedulamilitar`='$id' ";
+		$this->db->query($mil);
+      $mil="DELETE FROM `necesidades` WHERE `cedulamilitar`='$id' ";
+		$this->db->query($mil);
+   }  
 }

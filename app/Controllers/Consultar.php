@@ -21,4 +21,12 @@ class Consultar extends BaseController{
 		$respuesta = $lst->listarCasos();
 		echo json_encode($respuesta);
 	}
+
+	public function eliminarCasos(){
+		header('Content-Type: application/json');
+		$id = $_POST['id'];
+		$lst =  new \App\Models\MMilitar();
+		$respuesta = $lst->eliminarCasos($id);
+		echo json_encode($respuesta);
+	}
 }

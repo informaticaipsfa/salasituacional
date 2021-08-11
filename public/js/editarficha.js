@@ -44,6 +44,7 @@ let lstBeneficios = {};
         $("#cmbBienestar").val(omillocal.bienestar);
         $("#txtEnte").val(omillocal.ente);
         $("#txtOtros").val(omillocal.otros);
+        $("#foto").attr("src",`https://192.168.12.247/sssifanb/afiliacion/temp/${omillocal.cedula}/foto.jpg`);
         }
 
 
@@ -172,29 +173,29 @@ function ImprimirFicha() {
                                 <td colspan="6" class="centrado">FICHA DEL MILITAR</td>
                         </tr>
                         <tr>
-                                <td rowspan="5">FOTO</td>
-                                <td colspan="2">GRADO/JERARQUÍA</td>
-                                <td colspan="3">${omillocal.grado}</td>
+                                <td rowspan="5"><img class="img" src="https://192.168.12.247/sssifanb/afiliacion/temp/${omillocal.cedula}/foto.jpg"></td>
+                                <td colspan="1"><b>GRADO/JERARQUÍA</b></td>
+                                <td colspan="4">${omillocal.grado}</td>
                         </tr>
 
                         <tr>
-                                <td colspan="2">NOMBRES Y APELLIDOS</td>
-                                <td colspan="3">${omillocal.nombre}</td>
+                                <td colspan="1"><b>NOMBRES Y APELLIDOS</b></td>
+                                <td colspan="4">${omillocal.nombre}</td>
                         </tr>
 
                         <tr>
-                                <td colspan="2">N° DE CÉDULA</td>
-                                <td colspan="3">${omillocal.cedula}</td>
+                                <td colspan="1"><b>N° DE CÉDULA</b></td>
+                                <td colspan="4">V-${omillocal.cedula}</td>
                         </tr>
                         
                         <tr>
-                        <td colspan="2">COMPONENTE</td>
-                        <td colspan="3">${omillocal.componente}</td>
+                                <td colspan="1"><b>COMPONENTE</b></td>
+                                <td colspan="4">${omillocal.componente}</td>
                         </tr>
 
                         <tr>
-                                <td colspan="2">SITUACIÓN</td>
-                                <td colspan="3">${omillocal.situacion}</td>
+                                <td colspan="1"><b>SITUACIÓN</b></td>
+                                <td colspan="4">${omillocal.situacion}</td>
                         </tr>
                 </tr>
                 <tr>
@@ -202,25 +203,25 @@ function ImprimirFicha() {
                                 <td colspan="6" class="centrado">EVENTO</td>
                         </tr>
                         <tr>
-                                <td>CAUSA</td>
+                                <td><b>CAUSA</b></td>
                                 <td colspan="2">${omillocal.causa}</td>
-                                <td>FECHA</td>
+                                <td><b>FECHA</b></td>
                                 <td colspan="2">${omillocal.fecha_evento}</td>
                         </tr>
 
                         <tr>
-                                <td>LUGAR</td>
+                                <td><b>LUGAR</b></td>
                                 <td colspan="2">${omillocal.nombre}</td>
-                                <td>ESTADO</td>
+                                <td><b>ESTADO</b></td>
                                 <td colspan="2">${omillocal.estado}</td>
                         </tr>
 
                         <tr>
-                                <td>ASCENSO POST-MORTEM</td>
+                                <td><b>ASCENSO POST-MORTEM</b></td>
                                 <td>${omillocal.ascenso_postmortem}</td>
-                                <td>N° DE RESOLUCIÓN</td>
+                                <td><b>N° DE RESOLUCIÓN</b></td>
                                 <td>${omillocal.numero_resolucion}</td>
-                                <td>FECHA DE RESOLUCIÓN</td>
+                                <td><b>FECHA DE RESOLUCIÓN</b></td>
                                 <td>${omillocal.fecha_resolucion}</td>
                         </tr>
                         
@@ -264,23 +265,23 @@ function ImprimirFicha() {
                                 <td colspan="6" class="centrado">NECESIDADES</td>
                         </tr>
                         <tr>
-                                <td>LINEA BLANCA</td>
+                                <td><b>LINEA BLANCA</b></td>
                                 <td colspan="2">${omillocal.linea_blanca}</td>
-                                <td>VIVENDA</td>
+                                <td><b>VIVENDA</b></td>
                                 <td colspan="2">${omillocal.vivienda}</td>
                         </tr>
 
                         <tr>
-                                <td>VEHICULO</td>
+                                <td><b>VEHICULO</b></td>
                                 <td colspan="2">${omillocal.vehiculo}</td>
-                                <td>BIENESTAR</td>
+                                <td><b>BIENESTAR</b></td>
                                 <td colspan="2">${omillocal.bienestar}</td>
                         </tr>
 
                         <tr>
-                                <td>ENTE</td>
+                                <td><b>ENTE</b></td>
                                 <td colspan="2">${omillocal.ente}</td>
-                                <td>OTROS</td>
+                                <td><b>OTROS</b></td>
                                 <td colspan="2">${omillocal.otros}</td>
                         </tr>
                         
@@ -293,44 +294,49 @@ function ImprimirFicha() {
         ventana.document.write(html + `<div style="background: none" id='btn'></div>`);
         ventana.document.head.innerHTML = `<style>
             * {
-            font-size: 12px;
-            font-family: 'Times New Roman';
-            }
+        text-align: center;
+                font-size: 12px;
+                font-family: 'Times New Roman';
+                }
         
         .body {
-            width: 100px;
-            max-width: 100px;
-        }
+                width: 100px;
+                max-width: 100px;
+                }
         
         .footer {
-            font-style: italic;
-            width: 100px;
-            max-width: 100px;
-            word-break: break-all;
-        }
+                font-style: italic;
+                width: 100px;
+                max-width: 100px;
+                word-break: break-all;
+                }
         
         .header {
-            width: 100px;
-            max-width: 100px;
-            word-break: break-all;
-        }
+                width: 100px;
+                max-width: 100px;
+                word-break: break-all;
+                }
         
         .centrado {
-            text-align: center;
-            font-size: 15px;
-            background: red;
-            color: #FDFEFE;
-        }
+                text-align: center;
+                font-size: 15px;
+                background: red;
+                color: #FDFEFE;
+                }
         
         .ticket {
-            width: 100px;
-            max-width: 100px;
-        }
+                width: 100px;
+                max-width: 100px;
+                }
+        .img {
+                width: 145px;
+                height: 170px;
+                }
         
         
                 </style>̣`;
                 
-        ventana.print()
+        //ventana.print()
         //ventana.close()
         //CargarUrl('cuerpo', 'public/inc/solicitar/solicitar');  
     }
