@@ -5,7 +5,7 @@
     <!-- Small boxes (Stat box) -->
       <div class="row">
        <div class="col-lg-4 col-4 py-3">
-          <a href="http://192.168.12.240/salasituacional/submenuregistrar" style="text-decoration:none">
+          <a href="<?php echo base_url()?>/submenuregistrar" style="text-decoration:none">
             <div class="card shadow bg-success text-black align-items-center">
               <div class="card-body">
                 <span class="h3 mb-0 text-white">REGISTRAR CASO</span>
@@ -14,7 +14,7 @@
           </a>
         </div>
         <div class="col-lg-4 col-4 py-3">
-          <a href="http://192.168.12.240/salasituacional/consultar/bandeja" style="text-decoration:none">
+          <a href="<?php echo base_url()?>/consultar/bandeja" style="text-decoration:none">
             <div class="card shadow bg-danger text-black align-items-center">
               <div class="card-body">
                 <span class="h3 mb-0 text-white">CONSULTAR CASO</span>
@@ -24,7 +24,7 @@
         </div>
           <!-- ./col -->
         <div class="col-lg-4 col-4 py-3">
-          <a href="http://192.168.12.240/salasituacional/" style="text-decoration:none">
+          <a href="<?php echo base_url()?>/" style="text-decoration:none">
             <div class="card shadow bg-primary text-black align-items-center">
               <div class="card-body">
                 <span class="h3 mb-0 text-white">REPORTES</span>

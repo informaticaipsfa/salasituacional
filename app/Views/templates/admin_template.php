@@ -12,17 +12,17 @@
     <!-- Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Icons CSS -->
-    <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/feather.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>/public/css/feather.css">
     <!-- Date Range Picker CSS -->
-    <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/daterangepicker.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>/public/css/daterangepicker.css">
     <!-- App CSS -->
-    <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/app-light.css" id="lightTheme" disabled>
-    <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/app-dark.css" id="darkTheme">
-    <script type="text/javascript" src="http://192.168.12.240/salasituacional/public/plugins/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="<?php echo base_url()?>/public/css/app-light.css" id="lightTheme" disabled>
+    <link rel="stylesheet" href="<?php echo base_url()?>/public/css/app-dark.css" id="darkTheme">
+    <script type="text/javascript" src="<?php echo base_url()?>/public/plugins/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="<?php echo base_url()?>/public/css/font-awesome.min.css"> -->
 <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/styles.css"> -->
+    <!-- <link rel="stylesheet" href="<?php echo base_url()?>/public/css/styles.css"> -->
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -57,14 +57,14 @@
         <nav class="vertnav navbar navbar-light">
           <!-- nav bar -->
           <div class="w-100 mb-4 d-flex">
-            <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="http://192.168.12.240/salasituacional/public/principal">
-                <img src="http://192.168.12.240/salasituacional/public/img/logo.png" alt="..." class="avatar-img rounded-circle">
+            <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="<?php echo base_url()?>/public/principal">
+                <img src="<?php echo base_url()?>/public/img/logo.png" alt="..." class="avatar-img rounded-circle">
             </a>
           </div>
         
           <ul class="navbar-nav flex-fill w-100 mb-2" id="_menulateral">
             <li class="nav-item w-100">
-              <a class="nav-link" href="http://192.168.12.240/salasituacional/principal"">
+              <a class="nav-link" href="<?php echo base_url()?>/principal"">
                 <i class="fe fe-home fe-16"></i>
                 <span class="ml-3 item-text">Principal</span>
               </a>
@@ -76,38 +76,38 @@
               </a>
               <ul class="list-unstyled pl-4 w-100 collapse" id="dashboard">
                 <li class="nav-item active">
-                  <a class="nav-link pl-3" href="http://192.168.12.240/salasituacional/militar/registrarmilitar"><span class="ml-1 item-text">Fallecido Acto de Servicio</span></a>
+                  <a class="nav-link pl-3" href="<?php echo base_url()?>/militar/registrarmilitar"><span class="ml-1 item-text">Fallecido Acto de Servicio</span></a>
                 </li>
               </ul>
               <ul class="list-unstyled pl-4 w-100 collapse" id="dashboard">
                 <li class="nav-item active">
-                  <a class="nav-link pl-3" href="http://192.168.12.240/salasituacional/militar/registrarmilitar"><span class="ml-1 item-text">Fallecido Fuera de Acto de Servicio</span></a>
+                  <a class="nav-link pl-3" href="<?php echo base_url()?>/militar/registrarmilitar"><span class="ml-1 item-text">Fallecido Fuera de Acto de Servicio</span></a>
                 </li>
               </ul>
               <ul class="list-unstyled pl-4 w-100 collapse" id="dashboard">
                 <li class="nav-item active">
-                  <a class="nav-link pl-3" href="http://192.168.12.240/salasituacional/militar/registrarmilitar"><span class="ml-1 item-text">Secuestrado</span></a>
+                  <a class="nav-link pl-3" href="<?php echo base_url()?>/militar/registrarmilitar"><span class="ml-1 item-text">Secuestrado</span></a>
                 </li>
               </ul>
               <ul class="list-unstyled pl-4 w-100 collapse" id="dashboard">
                 <li class="nav-item active">
-                  <a class="nav-link pl-3" href="http://192.168.12.240/salasituacional/militar/registrarmilitar"><span class="ml-1 item-text">Desaparecido</span></a>
+                  <a class="nav-link pl-3" href="<?php echo base_url()?>/militar/registrarmilitar"><span class="ml-1 item-text">Desaparecido</span></a>
                 </li>
               </ul>
               <ul class="list-unstyled pl-4 w-100 collapse" id="dashboard">
                 <li class="nav-item active">
-                  <a class="nav-link pl-3" href="http://192.168.12.240/salasituacional/militar/registrarmilitar"><span class="ml-1 item-text">Herido</span></a>
+                  <a class="nav-link pl-3" href="<?php echo base_url()?>/militar/registrarmilitar"><span class="ml-1 item-text">Herido</span></a>
                 </li>
               </ul>
             </li>
             <li class="nav-item w-100">
-              <a class="nav-link" href="http://192.168.12.240/salasituacional/consultar/bandeja"">
+              <a class="nav-link" href="<?php echo base_url()?>/consultar/bandeja"">
                 <i class="fe fe-search fe-16"></i>
                 <span class="ml-3 item-text">Consultar Caso</span>
               </a>
             </li>
             <li class="nav-item w-100">
-              <a class="nav-link" href="http://192.168.12.240/salasituacional"">
+              <a class="nav-link" href="<?php echo base_url()?>"">
                 <i class="fe fe-file fe-16"></i>
                 <span class="ml-3 item-text">Reportes</span>
               </a>
@@ -130,15 +130,15 @@
       </main> <!-- main -->
     </div> <!-- .wrapper -->
     
-    <script src="http://192.168.12.240/salasituacional/public/plugins/popper.min.js"></script>
-    <script src="http://192.168.12.240/salasituacional/public/plugins/moment.min.js"></script>
-    <script src="http://192.168.12.240/salasituacional/public/plugins/bootstrap.min.js"></script>
-    <script src="http://192.168.12.240/salasituacional/public/plugins/simplebar.min.js"></script>
-    <script src='http://192.168.12.240/salasituacional/public/plugins/daterangepicker.js'></script>
-    <script src='http://192.168.12.240/salasituacional/public/plugins/jquery.stickOnScroll.js'></script>
-    <script src="http://192.168.12.240/salasituacional/public/plugins/tinycolor-min.js"></script>
-    <script src="http://192.168.12.240/salasituacional/public/plugins/config.js"></script>
-    <script src="http://192.168.12.240/salasituacional/public/plugins/apps.js"></script>
+    <script src="<?php echo base_url()?>/public/plugins/popper.min.js"></script>
+    <script src="<?php echo base_url()?>/public/plugins/moment.min.js"></script>
+    <script src="<?php echo base_url()?>/public/plugins/bootstrap.min.js"></script>
+    <script src="<?php echo base_url()?>/public/plugins/simplebar.min.js"></script>
+    <script src='<?php echo base_url()?>/public/plugins/daterangepicker.js'></script>
+    <script src='<?php echo base_url()?>/public/plugins/jquery.stickOnScroll.js'></script>
+    <script src="<?php echo base_url()?>/public/plugins/tinycolor-min.js"></script>
+    <script src="<?php echo base_url()?>/public/plugins/config.js"></script>
+    <script src="<?php echo base_url()?>/public/plugins/apps.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
       <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
       <script>
@@ -153,15 +153,15 @@
       </script> -->
     
     <script>
-    let _API = `http://192.168.12.240/salasituacional`
+    let _API = `<?php echo base_url()?>`
     </script>
 
-    <script src="http://192.168.12.240/salasituacional/public/js/consultar.js"></script>
-    <script src="http://192.168.12.240/salasituacional/public/js/casos.js"></script>
+    <script src="<?php echo base_url()?>/public/js/consultar.js"></script>
+    <script src="<?php echo base_url()?>/public/js/casos.js"></script>
     
-    <!-- <script src="http://192.168.12.240/salasituacional/public/js/taquillas.js"></script>
-    <script src="http://192.168.12.240/salasituacional/public/js/bandeja.js"></script>
-    <script src="http://192.168.12.240/salasituacional/public/js/oficinas.js"></script>
-    <script src="http://192.168.12.240/salasituacional/public/js/sucursales.js"></script>
-    <script src="http://192.168.12.240/salasituacional/public/js/solicitar.js"></script> -->
+    <!-- <script src="<?php echo base_url()?>/public/js/taquillas.js"></script>
+    <script src="<?php echo base_url()?>/public/js/bandeja.js"></script>
+    <script src="<?php echo base_url()?>/public/js/oficinas.js"></script>
+    <script src="<?php echo base_url()?>/public/js/sucursales.js"></script>
+    <script src="<?php echo base_url()?>/public/js/solicitar.js"></script> -->
   </body>
