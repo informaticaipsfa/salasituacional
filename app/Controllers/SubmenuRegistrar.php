@@ -1,6 +1,6 @@
 <?php namespace App\Controllers;
 
-class SubmenuRegistrar extends BaseController{
+class Submenuregistrar extends BaseController{
 	
 	/**
 	 * Funcion para cargar la vista principal

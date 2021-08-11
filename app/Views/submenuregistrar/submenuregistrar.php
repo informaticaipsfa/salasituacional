@@ -1,5 +1,5 @@
-<?= $this->extend('templates/admin_template') ?>
-<?= $this->section('content')?>
+<?php $this->extend('templates/admin_template') ?>
+<?php $this->section('content')?>
 <section class="content">
   <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
@@ -55,4 +55,4 @@
         <!-- /.row (main row) -->
   </div><!-- /.container-fluid -->
 </section>
-<?= $this->endSection() ?>
+<?php $this->endSection() ?>
