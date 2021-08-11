@@ -58,7 +58,7 @@
           <!-- nav bar -->
           <div class="w-100 mb-4 d-flex">
             <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="<?= base_url(); ?>/principal">
-                <img src="http://192.168.12.240/public/img/logo.png" alt="..." class="avatar-img rounded-circle">
+                <img src="http://192.168.12.240/salasituacional/public/img/logo.png" alt="..." class="avatar-img rounded-circle">
             </a>
           </div>
         
