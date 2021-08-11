@@ -122,7 +122,7 @@
                     reg.insertarFamiliares(omil);
                     alert('Registro realizado satisfactoriamente !');
                     localStorage.removeItem(mil);
-                    window.location.href = 'http://localhost/registroMilitares/militar/registrarmilitar';	
+                    window.location.href = 'http://192.168.12.240/salasituacional/militar/registrarmilitar';	
                     			
                 }
                 else if(dataResult.statusCode==201){

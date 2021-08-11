@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico">
     <title>Sistema de Registro de Casos</title>
     <!-- Simple bar CSS -->
-    <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/simplebar.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>/public/css/simplebar.css">
     <!-- Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Icons CSS -->
@@ -62,9 +62,6 @@
             </a>
           </div>
         
-          <p class="text-muted nav-heading mt-4 mb-1">
-            <span>Apps</span>
-          </p>
           <ul class="navbar-nav flex-fill w-100 mb-2" id="_menulateral">
             <li class="nav-item w-100">
               <a class="nav-link" href="http://192.168.12.240/salasituacional/principal"">
