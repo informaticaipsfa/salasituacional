@@ -133,15 +133,15 @@
       </main> <!-- main -->
     </div> <!-- .wrapper -->
     
-    <script src="<?php echo base_url()?>/public/plugins/popper.min.js"></script>
-    <script src="<?php echo base_url()?>/public/plugins/moment.min.js"></script>
-    <script src="<?php echo base_url()?>/public/plugins/bootstrap.min.js"></script>
-    <script src="<?php echo base_url()?>/public/plugins/simplebar.min.js"></script>
-    <script src='<?php echo base_url()?>/public/plugins/daterangepicker.js'></script>
-    <script src='<?php echo base_url()?>/public/plugins/jquery.stickOnScroll.js'></script>
-    <script src="<?php echo base_url()?>/public/plugins/tinycolor-min.js"></script>
-    <script src="<?php echo base_url()?>/public/plugins/config.js"></script>
-    <script src="<?php echo base_url()?>/public/plugins/apps.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/plugins/popper.min.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/plugins/moment.min.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/plugins/bootstrap.min.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/plugins/simplebar.min.js"></script>
+    <script src='http://192.168.12.240/salasituacional/public/plugins/daterangepicker.js'></script>
+    <script src='http://192.168.12.240/salasituacional/public/plugins/jquery.stickOnScroll.js'></script>
+    <script src="http://192.168.12.240/salasituacional/public/plugins/tinycolor-min.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/plugins/config.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/plugins/apps.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
       <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
       <script>
@@ -156,15 +156,15 @@
       </script> -->
     
     <script>
-    let _API = `<?php echo base_url()?>`
+    let _API = `http://192.168.12.240/salasituacional`
     </script>
 
-    <script src="<?php echo base_url()?>/public/js/consultar.js"></script>
-    <script src="<?php echo base_url()?>/public/js/casos.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/js/consultar.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/js/casos.js"></script>
     
-    <!-- <script src="<?php echo base_url()?>/public/js/taquillas.js"></script>
-    <script src="<?php echo base_url()?>/public/js/bandeja.js"></script>
-    <script src="<?php echo base_url()?>/public/js/oficinas.js"></script>
-    <script src="<?php echo base_url()?>/public/js/sucursales.js"></script>
-    <script src="<?php echo base_url()?>/public/js/solicitar.js"></script> -->
+    <!-- <script src="http://192.168.12.240/salasituacional/public/js/taquillas.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/js/bandeja.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/js/oficinas.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/js/sucursales.js"></script>
+    <script src="http://192.168.12.240/salasituacional/public/js/solicitar.js"></script> -->
   </body>
