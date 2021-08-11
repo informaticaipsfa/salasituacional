@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://localhost/registroMilitares/';
+	public $baseURL = 'http://192.168.12.240/';
 
 	/*
 	|--------------------------------------------------------------------------
