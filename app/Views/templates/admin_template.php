@@ -8,17 +8,17 @@
     <link rel="icon" href="favicon.ico">
     <title>Sistema de Registro de Casos</title>
     <!-- Simple bar CSS -->
-    <link rel="stylesheet" href="<?php echo base_url()?>/public/css/simplebar.css">
+    <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/simplebar.css">
     <!-- Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Icons CSS -->
-    <link rel="stylesheet" href="<?php echo base_url()?>/public/css/feather.css">
+    <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/feather.css">
     <!-- Date Range Picker CSS -->
-    <link rel="stylesheet" href="<?php echo base_url()?>/public/css/daterangepicker.css">
+    <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/daterangepicker.css">
     <!-- App CSS -->
-    <link rel="stylesheet" href="<?php echo base_url()?>/public/css/app-light.css" id="lightTheme" disabled>
-    <link rel="stylesheet" href="<?php echo base_url()?>/public/css/app-dark.css" id="darkTheme">
-    <script type="text/javascript" src="<?php echo base_url()?>/public/plugins/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/app-light.css" id="lightTheme" disabled>
+    <link rel="stylesheet" href="http://192.168.12.240/salasituacional/public/css/app-dark.css" id="darkTheme">
+    <script type="text/javascript" src="http://192.168.12.240/salasituacional/public/plugins/jquery.min.js"></script>
     <link rel="stylesheet" href="css/font-awesome.min.css">
 <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -67,7 +67,7 @@
           </p>
           <ul class="navbar-nav flex-fill w-100 mb-2" id="_menulateral">
             <li class="nav-item w-100">
-              <a class="nav-link" href="<?= base_url(); ?>/principal"">
+              <a class="nav-link" href="http://192.168.12.240/salasituacional/principal"">
                 <i class="fe fe-home fe-16"></i>
                 <span class="ml-3 item-text">Principal</span>
               </a>
@@ -79,38 +79,38 @@
               </a>
               <ul class="list-unstyled pl-4 w-100 collapse" id="dashboard">
                 <li class="nav-item active">
-                  <a class="nav-link pl-3" href="<?= base_url(); ?>/militar/registrarmilitar"><span class="ml-1 item-text">Fallecido Acto de Servicio</span></a>
+                  <a class="nav-link pl-3" href="http://192.168.12.240/salasituacional/militar/registrarmilitar"><span class="ml-1 item-text">Fallecido Acto de Servicio</span></a>
                 </li>
               </ul>
               <ul class="list-unstyled pl-4 w-100 collapse" id="dashboard">
                 <li class="nav-item active">
-                  <a class="nav-link pl-3" href="<?= base_url(); ?>/militar/registrarmilitar"><span class="ml-1 item-text">Fallecido Fuera de Acto de Servicio</span></a>
+                  <a class="nav-link pl-3" href="http://192.168.12.240/salasituacional/militar/registrarmilitar"><span class="ml-1 item-text">Fallecido Fuera de Acto de Servicio</span></a>
                 </li>
               </ul>
               <ul class="list-unstyled pl-4 w-100 collapse" id="dashboard">
                 <li class="nav-item active">
-                  <a class="nav-link pl-3" href="<?= base_url(); ?>/militar/registrarmilitar"><span class="ml-1 item-text">Secuestrado</span></a>
+                  <a class="nav-link pl-3" href="http://192.168.12.240/salasituacional/militar/registrarmilitar"><span class="ml-1 item-text">Secuestrado</span></a>
                 </li>
               </ul>
               <ul class="list-unstyled pl-4 w-100 collapse" id="dashboard">
                 <li class="nav-item active">
-                  <a class="nav-link pl-3" href="<?= base_url(); ?>/militar/registrarmilitar"><span class="ml-1 item-text">Desaparecido</span></a>
+                  <a class="nav-link pl-3" href="http://192.168.12.240/salasituacional/militar/registrarmilitar"><span class="ml-1 item-text">Desaparecido</span></a>
                 </li>
               </ul>
               <ul class="list-unstyled pl-4 w-100 collapse" id="dashboard">
                 <li class="nav-item active">
-                  <a class="nav-link pl-3" href="<?= base_url(); ?>/militar/registrarmilitar"><span class="ml-1 item-text">Herido</span></a>
+                  <a class="nav-link pl-3" href="http://192.168.12.240/salasituacional/militar/registrarmilitar"><span class="ml-1 item-text">Herido</span></a>
                 </li>
               </ul>
             </li>
             <li class="nav-item w-100">
-              <a class="nav-link" href="<?= base_url(); ?>/consultar/bandeja"">
+              <a class="nav-link" href="http://192.168.12.240/salasituacional/consultar/bandeja"">
                 <i class="fe fe-search fe-16"></i>
                 <span class="ml-3 item-text">Consultar Caso</span>
               </a>
             </li>
             <li class="nav-item w-100">
-              <a class="nav-link" href="<?= base_url(); ?>"">
+              <a class="nav-link" href="http://192.168.12.240/salasituacional"">
                 <i class="fe fe-file fe-16"></i>
                 <span class="ml-3 item-text">Reportes</span>
               </a>
